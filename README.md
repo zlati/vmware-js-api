@@ -10,14 +10,14 @@ Get the current object ID.
 
 ###Dialogs
 - *WEB_PLATFORM.setDialogTitle('My title');*   
-Change dialog title at runtime.  
+Change dialog title at runtime. *WEB_PLATFORM.setDialogTitle(ns.getString('myView.title'););*   
 
 - *WEB_PLATFORM.closeDialog();*  
 Close the current modal dialog.  
 
 ###Resources
-- *ns.getString('myvariable');*   
-Load a variable from the current language **.properties** file in **/locale**   
+- *ns.getString('myView.title');*   
+Load a variable from the current language *.properties* file in */locale*   
 
 ###Other
 - *window.location.href = "/vsphere-client/MYCOMPANY/resources/myView.html" + document.location.search;*  
