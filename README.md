@@ -23,6 +23,12 @@ Load a variable from the current language *.properties* file in */locale*
 - *window.location.href = "/vsphere-client/MYCOMPANY/resources/myView.html" + document.location.search;*  
 Not a part from vSphere but still a useful one. Redirect within a modal dialog without closing it and inclose the query string. Do not forget to use *WEB_PLATFORM.setDialogTitle('My title');* in the new view so you don't end up with the same dialog name.
 
+###Catch the global refresh event
+function refreshData() {
+ console.log("refreshData() called");
+ }
+ WEB_PLATFORM.onGlobalRefreshRequest = refreshData;
+ 
 ###Embeding locale resources
 - *icon16=Embed("../../webapp/assets/img/icon16.png")*
 Embed image in the */locale* resources files. 
