@@ -7,7 +7,9 @@ Define *ns* as shortcut for your app's namespace - *var ns = com_mycompany_myapp
 ###Global  
 - *WEB_PLATFORM.getObjectId();*  
 Get the current object ID. 
-
+- *WEB_PLATFORM.sendNavigationRequest("com.vmware.samples.chassisa.MonitorView1", objectId);*
+Navigate to another view using its extension id. Where *var objectId = WEB_PLATFORM.getObjectId();*
+  
 ###Dialogs
 - *WEB_PLATFORM.setDialogTitle('My title');*   
 Change dialog title at runtime. *WEB_PLATFORM.setDialogTitle(ns.getString('myView.title'););*   
